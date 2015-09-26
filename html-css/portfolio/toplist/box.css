@@ -1,8 +1,17 @@
-footer {
-  text-align: center;
-  position: fixed;
+.parent {
+  display: flex;
+  height: 300px; /* Or whatever */
+}
+
+.child {
+  width: 100px;  /* Or whatever */
+  height: 100px; /* Or whatever */
+  margin-left: auto;  /* Magic! */
+  margin-right: auto;  /* Magic! */
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 *{
-	outline: 1px solid red !important;
+  outline: 1px solid red !important;
 }
