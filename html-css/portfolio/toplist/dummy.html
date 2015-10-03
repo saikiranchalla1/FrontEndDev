@@ -1,14 +1,25 @@
-<!doctype html>
+<!DOCTYPE html> 
 <html>
-  <head>
-	<link rel="stylesheet" type="text/css" 
-	href="box.css">
-  </head>
-  <body>
-	  <div class="parent">
-     <div class="child">
-                  
-     </div> 
-</div>    
-  </body>
+    <head>
+    	<link rel="stylesheet" type="text/css" 
+    	href="style.css">
+    	<script type="text/javascript">
+    		var list = document.querySelector('ul');
+			list.addEventListener('click', function(ev) {
+  				if( ev.target.tagName === 'LI') {
+     				ev.target.classList.toggle('done'); 
+  				}
+			}, false);
+    	</script>
+    </head>
+    <body>
+         <ul>
+			  <li>Buy milk</li>
+			  <li>Take the dog for a walk</li>
+			  <li>Exercise</li>
+			  <li>Write code</li>
+			  <li>Play music</li>
+			  <li>Relax</li>
+		 </ul>
+    </body>
 </html>
